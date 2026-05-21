@@ -1,10 +1,10 @@
-h4 {
-    color: burlywood; /* I didn't knew that i can even comment on CSS 🙂 */
+.Initial {
+    color: burlywood; /* Changes color of h4 */
     text-align: center;
     font-style: oblique;
 }
-h1 {
-    color: black;
+.Secondone {
+    color: black; 
     font-weight: bolder;
     text-align: center;
 }
@@ -12,37 +12,41 @@ h1 {
     text-align: center;
     color: aqua;
 }
-.Notice button {
+.Notice {
     font-size: medium;
     color: red;
 }
+.Key {
+    font-size: medium;
+    color: lightseagreen;
+}
 table {
-    border: 2px solid burlywood;
-    width: max-content;
-    background-color: rgb(0, 0, 0);
+     width: max-content;
+    background-color: darkkhaki;
     padding: 5px;
     margin: auto;
 }
 table tr th, table tr td {
-    border: 1px solid rgb(255, 251, 251);
+    border: 2px solid black;
 }
 table tr th {
+    color: darkcyan;
+}
+table tr td {
     color: darkgreen;
 }
-table tr td:first-child {
-    color:darkslateblue;
-}
 .Phone {
-    color: darkblue;
+    color: white;
     font-weight: bold;
 }
 a button {
-    color: greenyellow;
-    background-color: black;
+    color: lightseagreen;
+    background-color: darkolivegreen;
 }
 .Number {
     font-weight: bold;
     font-size: large;
+    color: green;
 }
 .Logo {
     display: block;
@@ -80,12 +84,12 @@ a button {
   100% { opacity: 0; }
 }
 .slider {
-  position: fixed;        /* stays in place while scrolling, idk what I'm saying..*/
+  position: fixed;        /* The position CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.*/
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;            /* sends it behind everything i think,, as i have already used this above once a time*/
+  z-index: -1;            /* For a positioned box, the 'z-index' property specifies the stack level of the box in the current stacking context and whether the box establishes a local stacking context.*/
   filter: blur(3px) brightness(0.5);  /* blurry and little bit dark */
 }
 .content {
@@ -94,5 +98,12 @@ a button {
   color: white;          /* text is visible on the dark background */
   padding: 40px;
 }
-
-.Consultation {color: palegreen; font-size: large; font-weight: bold;}
+.Consultation {
+    color: palegreen; font-size: large; font-weight: bold;
+}
+.Inform {
+    color: greenyellow;
+}
+.Info {
+    color: burlywood
+}
