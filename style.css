@@ -1,121 +1,157 @@
+/* styling for the h4 title thing, hehe😊 */
 .Initial {
-    color: burlywood; /* Changes color of h4 */
-    text-align: center;
-    font-style: oblique;
-}
-.Secondone {
-    color: black; 
-    font-weight: bolder;
-    text-align: center;
-}
-.Address {
-    text-align: center;
-    color: aqua;
-}
-.Notice {
-    font-size: medium;
-    color: red;
-}
-.Key {
-    font-size: medium;
-    color: lightseagreen;
-}
-table {
-     width: max-content;
-    background-color: darkkhaki;
-    padding: 5px;
-    margin: auto;
-}
-table tr th, table tr td {
-    border: 2px solid black;
-}
-table tr th {
-    color: darkcyan;
-}
-table tr td {
-    color: darkgreen;
-}
-.Phone {
-    color: white;
-    font-weight: bold;
-}
-a button {
-    color: lightseagreen;
-    background-color: darkolivegreen;
-}
-.Number {
-    font-weight: bold;
-    font-size: large;
-    color: green;
-}
-.Logo {
-    display: block;
-    margin:auto;
-    width: 100px;
-    height: 100px;
-}
-.Compound {
-    display: block;
-    margin: auto;
-    width: 400px;
-    height: 300px;
-}
-.slider {
-  position: relative;
-  width: 100%;
-  height: 400px;
+    color: burlywood; /* tan color for the text */
+    text-align: center; /* puts it in the middle */
+    font-style: oblique; /* makes it look slanted like italic */
 }
 
-.slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  opacity: 0;
+.Secondone {
+    color: black; /* black text */
+    font-weight: bolder; /* extra bold text */
+    text-align: center; /* centered */
 }
-#slide1 { background-image: url("images/image1.jpg"); animation: fade 30s infinite 0s; z-index: 3; }
-#slide2 { background-image: url("images/image2.jpg"); animation: fade 30s infinite 10s; z-index: 2; }
-#slide3 { background-image: url("images/image3.jpg"); animation: fade 30s infinite 20s; z-index: 1; }
-@keyframes fade {
-  0%   { opacity: 1; }
-  30%  { opacity: 1; }
-  33%  { opacity: 0; }
-  100% { opacity: 0; }
+
+.Address {
+    text-align: center; /* center the address */
+    color: aqua; /* light blue color */
 }
-.slider {
-  position: fixed;        /* The position CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.*/
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;            /* For a positioned box, the 'z-index' property specifies the stack level of the box in the current stacking context and whether the box establishes a local stacking context.*/
-  filter: blur(3px) brightness(0.5);  /* blurry and little bit dark */
+
+.Notice {
+    font-size: medium; /* normal default size */
+    color: red; /* red text so it stands out */
 }
-.content {
-  position: relative;
-  z-index: 1;            /* sits on top of the slider */
-  color: white;          /* text is visible on the dark background */
-  padding: 40px;
+
+.Key {
+    font-size: medium; /* normal size */
+    color: lightseagreen; /* teal-ish color */
 }
-.Consultation {
-    color: palegreen; font-size: large; font-weight: bold;
+
+/* styling the table */
+table {
+     width: max-content; /* table only takes as much width as it needs */
+    background-color: darkkhaki; /* khaki bg for the table */
+    padding: 5px; /* small gap inside the table */
+    margin: auto; /* centers the whole table on the page */
 }
-.Inform {
-    color: greenyellow;
+
+/* borders for table headers and cells */
+table tr th, table tr td {
+    border: 2px solid black; /* black border around every cell */
 }
-.Info {
-    color: burlywood
+
+table tr th {
+    color: darkcyan; /* header text color */
 }
-.Congratulation {
-    color: lightseagreen; font-size: large; font-weight: bold;
+
+table tr td {
+    color: darkgreen; /* normal cell text color */
 }
-.Congratulatoryimage {
-    display: block;
-    margin: auto;
-    width: 400px;
+
+.Phone {
+    color: white; /* white text */
+    font-weight: bold; /* bold */
+}
+
+/* the button inside the link tag */
+a button {
+    color: lightseagreen; /* text color of button */
+    background-color: darkolivegreen; /* button background */
+}
+
+.Number {
+    font-weight: bold; /* bold text */
+    font-size: large; /* bigger font */
+    color: green; /* green text */
+}
+
+.Logo {
+    display: block; /* so margin auto works */
+    margin:auto; /* centers the logo */
+    width: 100px; /* logo size */
+    height: 100px;
+}
+
+.Compound {
+    display: block; /* block so it can be centered */
+    margin: auto; /* centers it */
+    width: 400px; /* image size */
     height: 300px;
 }
+
+/* first version of slider, this gets overridden later below */
+.slider {
+  position: relative; /* so the slides inside can be positioned properly */
+  width: 100%; /* full width */
+  height: 400px; /* fixed height for the slider */
+}
+
+/* each slide image */
+.slide {
+  position: absolute; /* stacks slides on top of each other */
+  width: 100%; /* fills the slider width */
+  height: 100%; /* fills the slider height */
+  background-size: cover; /* image covers the whole box, no stretching weirdness */
+  background-position: center; /* keeps image centered */
+  opacity: 0; /* hidden by default, animation brings it in */
+}
+
+/* slide 1 pic and timing */
+#slide1 { background-image: url("images/image1.jpg"); animation: fade 30s infinite 0s; z-index: 3; }
+/* slide 2 pic, starts fading in 10s later */
+#slide2 { background-image: url("images/image2.jpg"); animation: fade 30s infinite 10s; z-index: 2; }
+/* slide 3 pic, starts fading in 20s later */
+#slide3 { background-image: url("images/image3.jpg"); animation: fade 30s infinite 20s; z-index: 1; }
+
+/* the fade animation used by the slides */
+@keyframes fade {
+  0%   { opacity: 1; } /* fully visible at start */
+  30%  { opacity: 1; } /* stays visible till here, so it holds for a bit */
+  33%  { opacity: 0; } /* quickly disappears */
+  100% { opacity: 0; } /* stays gone till the loop restarts */
+}
+
+/* this is the actual slider style being used, overrides the one above since it comes after */
+.slider {
+  position: fixed;        /* stays put even when you scroll */
+  top: 0;
+  left: 0; /* pins it to top left corner so it covers full screen */
+  width: 100%;
+  height: 100%; /* covers the whole screen */
+  z-index: -1;            /* pushes it behind everything else on the page */
+  filter: blur(3px) brightness(0.5);  /* blurs it a bit and darkens it so text on top is readable */
+}
+
+/* stuff that sits on top of the blurred slider background */
+.content {
+  position: relative; /* needed for z-index to work */
+  z-index: 1;            /* keeps content above the slider */
+  color: white;          /* white text so it shows up on the dark background */
+  padding: 40px; /* some breathing room around the content */
+}
+
+.Consultation {
+    color: palegreen; font-size: large; font-weight: bold; /* green, big, bold text */
+}
+
+.Inform {
+    color: greenyellow; /* bright green-yellow text */
+}
+
+.Info {
+    color: burlywood /* tan colored text, forgot the semicolon here but it still works */
+}
+
+.Congratulation {
+    color: lightseagreen; font-size: large; font-weight: bold; /* teal, big, bold */
+}
+
+.Congratulatoryimage {
+    display: block; /* needed for centering */
+    margin: auto; /* centers the image */
+    width: 400px; /* image size */
+    height: 300px;
+}
+
 .AdditionalInfo {
-    color: lightseagreen; font-size: large; font-weight: bold; text-align: center;
+    color: lightseagreen; font-size: large; font-weight: bold; text-align: center; /* teal, big, bold, centered 😊*/
 }
