@@ -78,13 +78,6 @@ a button {
     height: 300px;
 }
 
-/* first version of slider, this gets overridden later below */
-.slider {
-  position: relative; /* so the slides inside can be positioned properly */
-  width: 100%; /* full width */
-  height: 400px; /* fixed height for the slider */
-}
-
 /* each slide image */
 .slide {
   position: absolute; /* stacks slides on top of each other */
@@ -155,3 +148,10 @@ a button {
 .AdditionalInfo {
     color: lightseagreen; font-size: large; font-weight: bold; text-align: center; /* teal, big, bold, centered 😊*/
 }
+
+.slide2.0 {
+  position: relative; /* so the slides inside can be positioned properly */
+  width: 100%; /* full width */
+  height: 400px; /* fixed height for the slider */
+}
+this much for today ok?
