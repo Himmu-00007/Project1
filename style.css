@@ -152,6 +152,6 @@ a button {
 .slide2.0 {
   position: relative; /* so the slides inside can be positioned properly */
   width: 100%; /* full width */
-  height: 400px; /* fixed height for the slider, done, finally!!!*/
+  height: 400px; /* fixed height for the slider*/
 }
 
