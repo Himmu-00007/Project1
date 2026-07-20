@@ -1,4 +1,4 @@
-/* styling for the h4 title thing, hehe😊 */
+/* styling for the h4 title thing */
 .Initial {
     color: burlywood; /* tan color for the text */
     text-align: center; /* puts it in the middle */
@@ -146,12 +146,12 @@ a button {
 }
 
 .AdditionalInfo {
-    color: lightseagreen; font-size: large; font-weight: bold; text-align: center; /* teal, big, bold, centered 😊*/
+    color: lightseagreen; font-size: large; font-weight: bold; text-align: center; /* teal, big, bold, centered */
 }
 
 .slide2.0 {
   position: relative; /* so the slides inside can be positioned properly */
   width: 100%; /* full width */
-  height: 400px; /* fixed height for the slider */
+  height: 400px; /* fixed height for the slider, done, finally!!!*/
 }
-this much for today ok?
+
